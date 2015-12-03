@@ -7,7 +7,7 @@ httpd.conf または .htaccess に下記を追加
 デフォルトでは0だが、何らか制限がある場合には制限解除。
 
 ## phpの設定 ##
-** php.iniの場合 **
+**php.iniの場合**
 	file_uploads = On
 	upload_max_filesize = 2G
 	post_max_size = 2G
@@ -15,7 +15,7 @@ httpd.conf または .htaccess に下記を追加
 	memory_limit = 128M
 	max_execution_time = 60
 
-** .htaccessの場合 **
+**.htaccessの場合**
 	php_value file_uploads On
 	php_value upload_max_filesize 2G
 	php_value post_max_size 2G
@@ -23,7 +23,7 @@ httpd.conf または .htaccess に下記を追加
 	php_value max_execution_time 60
 	php_value max_input_time 60
 
-** php内の場合
+**php内の場合
 	<?php
 	ini_set('memory_limit', '40M');
 	ini_set('post_max_size', '32M');
