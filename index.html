@@ -1,0 +1,15 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>LargeFileUpload</title>
+</head>
+<body>
+<form action="upload.php" method="post" enctype="multipart/form-data">
+  Send files:<br />
+  <input type="hidden" name="MAX_FILE_SIZE" value="300000" />
+  <input name="userfile[]" type="file" multiple/><br />
+  <input type="submit" value="Send files" />
+</form>
+</body>
+</html>
